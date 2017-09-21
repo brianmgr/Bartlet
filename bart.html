@@ -21,7 +21,7 @@
   </div>
 
   <div class="w3-bar">
-    <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-left-align" style="width:50%" id='mapButton' onclick="location.href='bartmap.gif';"> Map </button>
+    <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-left-align" style="width:50%" id='mapButton' onclick='mapDisplay()'> Map </button>
     <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-right-align" style="width:50%" id='qpButton' onclick="location.href='https://m.bart.gov/schedules/quickplanner';"> Quickplanner </button>
   <div>
 
@@ -39,6 +39,8 @@
   <button class="w3-block w3-xlarge w3-button w3-black" id='goButton' style="display:none;" onclick='openInNewTab()'> Schedule </button>
 
   <button class="w3-block w3-button w3-red" id='resetButton' style="display:none;" onclick='reset()'> Reset </button>
+
+  <object id='map' data='bartmap.gif' style="display:none;"></object>
 
   </center>
 </body>

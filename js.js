@@ -29,8 +29,19 @@ function reset(){
   url = 'x';
 }
 
+function mapDisplay(){
+  var mapStatus = document.getElementById('map').style.display;
+
+  if (mapStatus == 'none'){
+    document.getElementById('map').style.display = 'initial';
+  }
+  else{
+    document.getElementById('map').style.display = 'none';
+  }
+}
+
 function openInNewTab() {
   var win = window.open(url, '_blank');
   win.focus();
-  reset()
+  reset();
 }
