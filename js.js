@@ -18,14 +18,11 @@ function makeButton(){
     document.getElementById('goButton').innerHTML = orig + ' to ' + dest;
     document.getElementById('goButton').style.display = 'initial';
     document.getElementById('resetButton').style.display = 'initial';
-    document.getElementById('timer').style.display = 'initial';
-    setTimeout(reset, 6000)
     }
   }
 
 function reset(){
   document.getElementById('goButton').style.display = 'none';
-  document.getElementById('timer').style.display = 'none';
   document.getElementById('resetButton').style.display = 'none';
   orig = 'x';
   dest = 'x';
