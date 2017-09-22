@@ -38,7 +38,7 @@ function mapDisplay(){
   var mapStatus = document.getElementById('map').style.display;
 
   if (mapStatus == 'none'){
-    document.getElementById('map').style.display = 'initial';
+    document.getElementById('map').style.display = 'block';
     document.getElementById('mapButton').innerHTML = 'Close Map';
   }
   else{
