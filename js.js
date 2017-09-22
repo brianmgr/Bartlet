@@ -5,6 +5,7 @@ var url = 'x';
 function selectStation(station){
   if (orig == 'x'){
     orig = station
+    makeButton()
   }
   else if (dest == 'x'){
     dest = station
@@ -14,11 +15,15 @@ function selectStation(station){
 }
 
 function makeButton(){
-  if (dest != 'x'){
+  if (dest == 'x'){
+    document.getElementById('goButton').innerHTML = orig + ' to' ;
+  }
+  else if (dest != 'x'){
     document.getElementById('goButton').innerHTML = orig + ' to ' + dest;
-    document.getElementById('goButton').style.display = 'initial';
-    document.getElementById('resetButton').style.display = 'initial';
+    document.getElementById('goButton').onclick = openInNewTab;
     }
+  document.getElementById('goButton').style.display = 'initial';
+  document.getElementById('resetButton').style.display = 'initial';
   }
 
 function reset(){

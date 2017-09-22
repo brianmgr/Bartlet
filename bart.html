@@ -6,12 +6,12 @@
   <title>BARTlet</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="js.js"></script>
-  <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="apple-touch-startup-image" href="apple-startup.png">
+  <link rel="shortcut icon" href="img/favico.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="img/apple-startup.png">
 </head>
 <body style="background-color:lightgrey;">
   <center>
@@ -21,26 +21,25 @@
   </div>
 
   <div class="w3-bar">
-    <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-left-align" style="width:50%" id='mapButton' onclick='mapDisplay()'> Map </button>
-    <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-right-align" style="width:50%" id='qpButton' onclick="location.href='https://m.bart.gov/schedules/quickplanner';"> Quickplanner </button>
+    <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-left-align" style="width:50%" id="mapButton" onclick="mapDisplay()"> Map </button>
+    <button class="w3-bar-item w3-ripple w3-button w3-purple w3-hover-purple w3-right-align" style="width:50%" id="qpButton" onclick="location.href='https://m.bart.gov/schedules/quickplanner';"> Quickplanner </button>
+    <object id="map" data="img/bartmap.gif" style="display:none;" height="100%" width="100%"></object>
   <div>
 
   <div class="w3-bar">
-    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:50%" id='ROCK' onclick="selectStation('ROCK')"> Rockridge </button>
-    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:50%" id='ROCK' onclick="selectStation('MONT')"> Montgomery </button>
+    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:50%" id="ROCK" onclick="selectStation('ROCK')"> Rockridge </button>
+    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:50%" id="ROCK" onclick="selectStation('MONT')"> Montgomery </button>
   <div>
 
   <div class="w3-bar">
-    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:33.3%" id='OAKL' onclick="selectStation('OAKL')"> OAK </button>
-    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:33.3%" id='SFIA' onclick="selectStation('SFIA')"> SFO </button>
-    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:33.3%" id='POWL' onclick="selectStation('POWL')"> Powell </button>
+    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:33.3%" id="OAKL" onclick="selectStation('OAKL')"> OAK </button>
+    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:33.3%" id="SFIA" onclick="selectStation('SFIA')"> SFO </button>
+    <button class="w3-bar-item w3-ripple w3-teal w3-hover-teal" style="width:33.3%" id="POWL" onclick="selectStation('POWL')"> Powell </button>
   </div>
 
-  <button class="w3-block w3-xlarge w3-button w3-black" id='goButton' style="display:none;" onclick='openInNewTab()'> Schedule </button>
+  <button class="w3-block w3-xlarge w3-button w3-black" id="goButton" style="display:none;" onclick=""> Schedule </button>
 
-  <button class="w3-block w3-button w3-red" id='resetButton' style="display:none;" onclick='reset()'> Reset </button>
-
-  <object id='map' data='bartmap.gif' height="100%" width="100%" style="display:none;"></object>
+  <button class="w3-block w3-button w3-red" id="resetButton" style="display:none;" onclick="reset()"> Reset </button>
 
   </center>
 </body>
