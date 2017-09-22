@@ -39,9 +39,11 @@ function mapDisplay(){
 
   if (mapStatus == 'none'){
     document.getElementById('map').style.display = 'initial';
+    document.getElementById('mapButton').innerHTML = 'Close Map';
   }
   else{
     document.getElementById('map').style.display = 'none';
+    document.getElementById('mapButton').innerHTML = 'Map'
   }
 }
 
