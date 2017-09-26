@@ -17,6 +17,7 @@ function selectStation(station){
 function makeButton(){
   if (dest == 'x'){
     document.getElementById('goButton').innerHTML = orig + ' to' ;
+    document.getElementById('goButton').onclick = null;
   }
   else if (dest != 'x'){
     document.getElementById('goButton').innerHTML = orig + ' to ' + dest;
